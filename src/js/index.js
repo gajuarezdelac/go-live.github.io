@@ -1,4 +1,8 @@
 (function () {
+
+
+
+
 	const second = 1000,
 		  minute = second * 60,
 		  hour = minute * 60,
@@ -20,6 +24,7 @@
 	}
 	//end
 	
+
 	const countDown = new Date(birthday).getTime(),
 		x = setInterval(function() {    
   

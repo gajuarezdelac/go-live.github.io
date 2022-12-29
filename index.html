@@ -18,11 +18,11 @@
   <div class="container">
 
 
-    <div class="img"><video loop="true" autoplay="autoplay" width="320" height="240" controls>
+    <div class="img">
+      <video id="video" loop="true"     autoplay="true"      width="320" height="240" controls>
         <source src="./src/images/peda.mp4" type="video/mp4">
       </video>
     </div>
-
 
     <br>
 
@@ -45,30 +45,34 @@
   </div>
 
 
-    <script src="./src/js/confetti.js"></script>
-    <!-- Confetti  JS-->
-    <script type="text/javascript">
+  <script src="./src/js/confetti.js"></script>
+  <!-- Confetti  JS-->
+  <script type="text/javascript">
 
-        // start
+    // start
 
-        const start = () => {
-            setTimeout(function() {
-                confetti.start()
-            }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
-        };
+    var vid = document.getElementById("video");
 
-        //  Stop
 
-        const stop = () => {
-            setTimeout(function() {
-                confetti.stop()
-            }, 100); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
-        };
 
-        start();
+    const start = () => {
+      setTimeout(function () {
+        confetti.start()
+      }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+    };
+
+    //  Stop
+
+    const stop = () => {
+      setTimeout(function () {
+        confetti.stop()
+      }, 100); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+    };
+
+    start();
         // stop();
-    </script>
-  
+  </script>
+
 
   <script src="./src/js/index.js"></script>
   <script src="./src/js/confeti.js"></script>
