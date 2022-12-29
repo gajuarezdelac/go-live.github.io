@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./src/css/index.css">
+  <link rel="stylesheet" href="./src/css/index.css">
 
-    <title>Document</title>
+  <title>Document</title>
 </head>
+
 <body>
-    
-  
+
+
 
   <div class="container">
 
 
-    <div class="img">
-      <img src="./src/images/hale-l.png" alt="logo">
+    <div class="img"><video autoplay loop width="320" height="240" controls>
+        <source src="./src/images/peda.mp4" type="video/mp4">
+      </video>
     </div>
+    <br>
 
-    <h1 id="headline">PROXIMAMENTE</h1>
+    <h1 id="headline">LA PEDITA PROXIMAMENTE</h1>
     <div id="countdown">
       <ul>
         <li><span id="days"></span>Días</li>
@@ -29,7 +33,7 @@
         <li><span id="seconds"></span>Segundos</li>
       </ul>
     </div>
-    
+
     <div>
       <span>🥳</span>
       <span>🎉</span>
@@ -39,9 +43,37 @@
   </div>
 
 
-      <script src="./src/js/index.js"></script>
-      
-      <script src="./src/js/flipdown.js"></script>
+  <p>Confetti Js Effect 🎇</p>
+    <script src="./src/js/confetti.js"></script>
+    <!-- Confetti  JS-->
+    <script type="text/javascript">
+
+        // start
+
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+
+        //  Stop
+
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+        };
+
+        start();
+        stop();
+    </script>
+  
+
+  <script src="./src/js/index.js"></script>
+  <script src="./src/js/confeti.js"></script>
+
+  <script src="./src/js/flipdown.js"></script>
 
 </body>
+
 </html>
