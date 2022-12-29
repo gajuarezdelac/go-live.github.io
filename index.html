@@ -18,13 +18,15 @@
   <div class="container">
 
 
-    <div class="img"><video autoplay loop width="320" height="240" controls>
+    <div class="img"><video loop="true" autoplay="autoplay" width="320" height="240" controls>
         <source src="./src/images/peda.mp4" type="video/mp4">
       </video>
     </div>
+
+
     <br>
 
-    <h1 id="headline">LA PEDITA PROXIMAMENTE</h1>
+    <h1 id="headline">QUEDAN CORDIALMENTE INVITADOS A LA PEDITA PROXIMAMENTE</h1>
     <div id="countdown">
       <ul>
         <li><span id="days"></span>Días</li>
@@ -43,7 +45,6 @@
   </div>
 
 
-  <p>Confetti Js Effect 🎇</p>
     <script src="./src/js/confetti.js"></script>
     <!-- Confetti  JS-->
     <script type="text/javascript">
@@ -61,18 +62,16 @@
         const stop = () => {
             setTimeout(function() {
                 confetti.stop()
-            }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+            }, 100); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
         };
 
         start();
-        stop();
+        // stop();
     </script>
   
 
   <script src="./src/js/index.js"></script>
   <script src="./src/js/confeti.js"></script>
-
-  <script src="./src/js/flipdown.js"></script>
 
 </body>
 
